@@ -1,0 +1,14 @@
+name: Prueba Python
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Clonar repositorio
+      uses: actions/checkout@v3
+
+    - name: Ejecutar hola.py
+      run: python hola.py
